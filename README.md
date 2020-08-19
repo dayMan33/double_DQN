@@ -30,7 +30,7 @@ installation
 ### clone
 Clone this repository to your local machine using 'repository address goes here'
             
-    git clone 'git address goes here' 
+    git clone https://github.com/dayMan33/double_DQN.git
 
 ### setup 
 while in the project directory, run setup.sh to install all requirements.
@@ -63,6 +63,6 @@ For a more detailed example, check out this [repository](https://github.com/dayM
 
 support
 -------
-For any questions or comments, feel free to email me at danielrotem33@gmailcom.
+For any questions or comments, feel free to email me at danielrotem33@gmail.com
 
 
