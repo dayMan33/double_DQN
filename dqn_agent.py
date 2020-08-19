@@ -1,11 +1,12 @@
+from double_dqn import DoubleDQN
+from experience_replay import ExperienceReplay
+
 import numpy as np
 import pandas as pd
-from double_dqn.double_dqn import DoubleDQN
-from double_dqn.experience_replay import ExperienceReplay
 from tensorflow.keras.models import load_model, model_from_json
-import os
 from matplotlib import pyplot as plt
 from tqdm import tqdm
+import os
 
 
 class DQNAgent:
