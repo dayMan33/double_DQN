@@ -62,6 +62,6 @@ For a more detailed example, check out this [repository](https://github.com/dayM
 
 support
 -------
-For any questions or comments, feel free to email me at danielrotem33@gmailcom.
+For any questions or comments, feel free to email me at danielrotem33@gmail.com
 
 
