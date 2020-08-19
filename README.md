@@ -52,8 +52,10 @@ After setting the agent's model, you can train it by calling dqn_agent.train wit
     num_episodes = N
     env = MyEnv() # Inherits from DQNenv
     agent = DQNagent(env)
+    
+    # A compiled tf.keral Model to use as the agent's NN.
     model = build_model(env.get_state_shape(), env.get_action_shape())
-    agent.set_model(model) # A compiled tf.keral Model to use as the agent's NN.
+    agent.set_model(model)
     agent.train(num_episodes, path)
 ```
     
