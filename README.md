@@ -43,17 +43,18 @@ To start training an agent, you must implement a class of dqn_env with the requi
 initialize a dqn_agent with an instance of the environment as its only argument. Once you have done that, you will need
 to set the model of the agent to be a compiled tf.keras Model tailored specifically to your environment's needs. 
 After setting the agent's model, you can train it by calling dqn_agent.train with the necessary arguments
-    '''python
-    from double_dqn.dqn_env import DQNenv
-    from double_dqn.dqn_agent import DQNagent
-    path = 'model_path'
-    num_episodes = N
-    env = MyEnv() # Inherits from DQNenv
-    agent = DQNagent(env)
-    model = build_model(env.get_state_shape(), env.get_action_shape())
-    agent.set_model(model) # A compiled tf.keral Model to use as the agent's NN.
-    agent.train(num_episodes, path)
-    '''
+
+```python
+from double_dqn.dqn_env import DQNenv
+from double_dqn.dqn_agent import DQNagent
+path = 'directory_for_saving_trained_model'
+num_episodes = N
+env = MyEnv() # Inherits from DQNenv
+agent = DQNagent(env)
+model = build_model(env.get_state_shape(), env.get_action_shape())
+agent.set_model(model) # A compiled tf.keral Model to use as the agent's NN.
+agent.train(num_episodes, path)
+```
     
 The train method saves the weights and the model architecture to the specified path
 
