@@ -30,7 +30,7 @@ installation
 ### clone
 Clone this repository to your local machine using 'repository address goes here'
             
-    git clone 'git address goes here' 
+    git clone https://github.com/dayMan33/double_DQN.git
 
 ### setup 
 while in the project directory, run setup.sh to install all requirements.
@@ -42,7 +42,7 @@ usage
 To start training an agent, you must implement a class of dqn_env with the required methods. Only then can you 
 initialize a dqn_agent with an instance of the environment as its only argument. Once you have done that, you will need
 to set the model of the agent to be a compiled tf.keras Model tailored specifically to your environment's needs. 
-After setting the agent's model, you can train it by calling dqn_agent.train with the necessary arguments
+After setting the agent's model, you can train it by calling dqn_agent.train with the necessary arguments.
 
 ```python
 from double_dqn.dqn_env import DQNenv
